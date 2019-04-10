@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IntentBuilder</string>
+    <string-array name="action_array">
+        <item>android.intent.action.VIEW</item>
+        <item>android.intent.action.SEND</item>
+        <item>android.intent.action.PICK</item>
+        <item>android.intent.action.GET_CONTENT</item>
+        <item>android.intent.action.EDIT</item>
+        <item>android.intent.action.MAIN</item>
+
+    </string-array>
+
+</resources>

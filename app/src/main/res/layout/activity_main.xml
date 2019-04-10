@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_action"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="action" />
+
+                <Spinner
+                    android:id="@+id/spinner_action"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/action_array" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_datauri"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="DataUri" />
+
+                <EditText
+                    android:id="@+id/edittext_datauri"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:hint="geo:, http://, mailto:, tel:, etc" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_class"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="Activity Class" />
+
+                <EditText
+                    android:id="@+id/edittext_class"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ro.pub.cs.eim.lab.MainActivity" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_package"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="Activity Package" />
+
+                <EditText
+                    android:id="@+id/edittext_package"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ro.pub.cs.eim.lab.Exemplu" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_extrakey"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="Extra Key" />
+
+                <EditText
+                    android:id="@+id/edittext_extrakey"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:hint="key" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_extravalue"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="ExtraValue" />
+
+                <EditText
+                    android:id="@+id/edittext_extravalue"
+                    android:layout_width="324dp"
+                    android:layout_height="wrap_content"
+                    android:hint="VALUE" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
